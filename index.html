@@ -24,9 +24,9 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/relativeTime.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
-  
-  <title>Document</title>
+  <title>Vue Mail List</title>
 </head>
 <body>
   
@@ -34,13 +34,35 @@
 
     <header></header>
 
-    <main></main>
+    <main>
+      <div class="text-center" v-if="loadingPage">
+        <img src="https://scuolailciliegio.com/wp-content/uploads/2020/07/tenor.gif" alt="">
+        <h1>CARICAMENTO IN CORSO</h1>
+
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <ul>
+
+            <li class="col-12" v-for="email in emailList">
+              <a href="#">{{emailList}}</a>
+            </li>
+            
+          </ul>
+
+        </div>
+      </div>
+
+    </main>
 
     <footer></footer>
 
-    <script src="js/script.js"></script>
-
+    
   </div>
+  
+  <script src="js/script.js"></script>
 
 </body>
 </html>
