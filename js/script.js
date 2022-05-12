@@ -33,20 +33,17 @@ const app = new Vue({
 
   methods: {
     emailGenerator() {
-      for (let i = 0; i < this.numberEmail; i++) {
+      for(let i = 0; i < this.numberEmail; i++) {
+
         axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-        .then((res)=>{
+
+        .then(res => {
+
           // this.generateEmail.push(res.data.response);
           this.emailList.push(res.data.response);
-          console.log(this.emailList);
+          // console.log(this.emailList);
           this.loadingPage = false;
-
-  
         })
-
-        
-        
-        
       }
     }
   },

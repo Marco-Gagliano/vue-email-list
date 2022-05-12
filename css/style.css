@@ -1,0 +1,12 @@
+body {
+  background-image: url(https://www.lexxion.eu/wp-content/uploads/2020/12/Algorithm-code.jpg);
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: aliceblue;
+}

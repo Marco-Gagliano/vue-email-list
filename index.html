@@ -37,19 +37,18 @@
     <main>
       <div class="text-center" v-if="loadingPage">
         <img src="https://scuolailciliegio.com/wp-content/uploads/2020/07/tenor.gif" alt="">
-        <h1>CARICAMENTO IN CORSO</h1>
-
+        <h3 class="bg-light">CARICAMENTO IN CORSO</h3>
       </div>
 
       <div class="container">
         <div class="row">
 
-          <ul>
+          <h1 class="text-uppercase text-center bg-success">email generator v.7.4.26.17.000018</h1>
 
-            <li class="col-12" v-for="email in emailList">
-              <a href="#">{{emailList}}</a>
-            </li>
-            
+          <ul>
+            <li v-for="email in emailList">
+              <p>{{email}}</p>
+            </li>       
           </ul>
 
         </div>
